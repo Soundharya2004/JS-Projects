@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1 - Random Quote Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <style>
+        body {
+            background-color: black;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-top: 20px;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+        .cont {
+            margin-top: 20px;
+        }
+        button {
+            background-color: #fff;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Task 1 - Random Quote Generator</h1>
+    </header>
+    <div class="container">
+        <h3 id="quote">Check your luck today</h3>
+        <div class="cont">
+            <button onclick="myClickFunction()">Click Me</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
