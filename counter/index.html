@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        body{
+            background-color: black;
+            color:white;
+        }
+        .container{
+            text-align: center;
+            padding-top:250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1>Counter</h1>
+    <button id="click">Add</button>
+    <button id="not">Deduct</button>
+
+
+    <p>Count : <span id="count">0</span></p>
+    <script>
+        const countButton = document.getElementById("click");
+        const notButton= document.getElementById("not");
+
+        const countElement = document.getElementById("count");
+        let count=0;
+
+        countButton.addEventListener("click", ()=>{
+            count++;
+            countElement.textContent = count;
+        });
+      
+        notButton.addEventListener("click", ()=>{
+            if(count>0){
+            count--;
+            countElement.textContent = count;
+       
+    }});
+    </script>
+    </div>
+</body>
+</html>
