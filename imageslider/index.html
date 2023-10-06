@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Slider</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-color: black;
+            color:white;
+            padding-top: 60px;
+            
+        }
+
+        h1 {
+            font-weight: bold;
+        }
+
+        #slider {
+            width: 300px;
+            height: 200px;
+            margin: 20px auto;
+            display: block;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Slider</h1>
+    <img id="slider" src="" alt="Image">
+    <br>
+    <button onclick="prevImage()">Previous</button>
+    <button onclick="nextImage()">Next</button>
+    
+    <script>
+        const images = [
+            "1.jpeg",
+            "2.jpeg",
+            "3.jpeg"
+        ];
+        
+        let currentIndex = 0;
+        const slider = document.getElementById("slider");
+        
+        function updateSlider() {
+            slider.src = images[currentIndex];
+        }
+        
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateSlider();
+        }
+        
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateSlider();
+        }
+        
+        updateSlider();
+    </script>
+</body>
+</html>
