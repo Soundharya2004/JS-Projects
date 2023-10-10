@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color:beige;
+    padding-top: 50px;
+}
+
+#drawing-board {
+    border: 2px solid #000;
+}
