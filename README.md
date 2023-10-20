@@ -1,2 +1,2 @@
 # JS-Projects
-This repository consists of contents of 30 beginner friendly projects in JavaScript
+This repository consists of contents of 8 beginner friendly projects in JavaScript
